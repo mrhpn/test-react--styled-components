@@ -2,8 +2,8 @@ import { ThemeProvider } from 'styled-components';
 
 import './App.css';
 import logo from './logo.svg';
-import AnimatedLogo, { Button } from './components/Button';
-import { toBePartiallyChecked } from '@testing-library/jest-dom/dist/matchers';
+import { Button } from './components/Button';
+import AnimatedLogo from './components/AnimatedLogo';
 
 const theme = {
   dark: {

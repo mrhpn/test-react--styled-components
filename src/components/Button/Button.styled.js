@@ -1,5 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
+// Props, and Pseudo Elements
 export const Base = styled.button`
   background: ${({ variant }) => (variant === 'outline' ? '#fff' : '#fff828')};
   border: 3px #000 solid;
@@ -21,6 +22,7 @@ export const Base = styled.button`
   }
 `;
 
+// Modifying the basic style
 export const Featured = styled(Base)`
   color: white;
   border: 3px #000 solid;
@@ -41,6 +43,7 @@ export const Featured = styled(Base)`
   }
 `;
 
+// Accepting attributes
 export const Submit = styled(Base).attrs((props) => ({ type: 'submit' }))`
   color: white;
   background: rgb(63, 94, 251);
@@ -50,17 +53,7 @@ export const Submit = styled(Base).attrs((props) => ({ type: 'submit' }))`
   }
 `;
 
-const rotate = keyframes`
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-`;
-
-export const AnimatedLogo = styled.img`
-  height: 10vmin;
-  pointer-events: none;
-  animation: ${rotate} infinite 10s linear;
-`;
-
+// Theming
 export const Dark = styled(Base)`
   color: ${(props) => props.theme.dark.text};
   background-color: ${(props) => props.theme.dark.primary};
