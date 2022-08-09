@@ -60,3 +60,12 @@ export const AnimatedLogo = styled.img`
   pointer-events: none;
   animation: ${rotate} infinite 10s linear;
 `;
+
+export const Dark = styled(Base)`
+  color: ${(props) => props.theme.dark.text};
+  background-color: ${(props) => props.theme.dark.primary};
+
+  &:hover {
+    background-color: black;
+  }
+`;
