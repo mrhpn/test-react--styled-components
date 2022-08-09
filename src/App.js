@@ -13,6 +13,9 @@ function App() {
       <div style={{ marginTop: 30 }}>
         <Button.Featured as="a">Featured</Button.Featured>
       </div>
+      <br />
+      <br />
+      <Button.Submit>Submit</Button.Submit>
     </div>
   );
 }

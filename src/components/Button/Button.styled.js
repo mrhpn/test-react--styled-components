@@ -40,3 +40,12 @@ export const Featured = styled(Base)`
     );
   }
 `;
+
+export const Submit = styled(Base).attrs((props) => ({ type: 'submit' }))`
+  color: white;
+  background: rgb(63, 94, 251);
+
+  &:hover {
+    color: rgb(63, 94, 251);
+  }
+`;

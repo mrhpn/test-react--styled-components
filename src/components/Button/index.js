@@ -1,3 +1,3 @@
-import { Base, Featured } from './Button.styled';
+import { Base, Featured, Submit } from './Button.styled';
 
-export const Button = { Base, Featured };
+export const Button = { Base, Featured, Submit };
