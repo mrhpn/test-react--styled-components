@@ -7,7 +7,7 @@ function App() {
       <Button.Base>Primary</Button.Base>
       <br />
       <br />
-      <Button.Base>Outline</Button.Base>
+      <Button.Base variant="outline">Outline</Button.Base>
       <br />
       <br />
       <div style={{ marginTop: 30 }}>

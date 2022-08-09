@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Base = styled.button`
-  background: #fff828;
-  border: 3px solid;
+  background: ${({ variant }) => (variant === 'outline' ? '#fff' : '#fff828')};
+  border: 3px #000 solid;
   border-radius: 999px;
   box-sizing: border-box;
-  color: #000;
+  color: black;
   font-weight: 900;
   padding: 20px 60px;
   position: relative;
