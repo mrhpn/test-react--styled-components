@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
 import './App.css';
 import logo from './logo.svg';
@@ -14,11 +14,21 @@ const theme = {
     primary: 'white',
     test: 'black',
   },
+  button: {
+    textTransform: 'uppercase',
+  },
 };
+
+const GlobalStyle = createGlobalStyle`
+  button {
+    text-transform: ${(props) => props.theme.button.textTransform};
+  }
+`;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <div className="App mt-3">
         <AnimatedLogo src={logo} />
         <br />

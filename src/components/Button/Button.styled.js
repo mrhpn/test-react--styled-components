@@ -10,7 +10,6 @@ export const Base = styled.button`
   font-weight: 900;
   padding: 20px 60px;
   position: relative;
-  text-transform: uppercase;
   font-family: Helvetica Neue, ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, Segoe UI, Roboto, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
