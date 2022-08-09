@@ -1,9 +1,13 @@
 import './App.css';
-import { Button } from './components/Button';
+import logo from './logo.svg';
+import AnimatedLogo, { Button } from './components/Button';
 
 function App() {
   return (
     <div className="App mt-3">
+      <AnimatedLogo src={logo} />
+      <br />
+      <br />
       <Button.Base>Primary</Button.Base>
       <br />
       <br />

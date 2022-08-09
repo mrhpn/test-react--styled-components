@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Base = styled.button`
   background: ${({ variant }) => (variant === 'outline' ? '#fff' : '#fff828')};
@@ -48,4 +48,15 @@ export const Submit = styled(Base).attrs((props) => ({ type: 'submit' }))`
   &:hover {
     color: rgb(63, 94, 251);
   }
+`;
+
+const rotate = keyframes`
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+`;
+
+export const AnimatedLogo = styled.img`
+  height: 10vmin;
+  pointer-events: none;
+  animation: ${rotate} infinite 10s linear;
 `;
