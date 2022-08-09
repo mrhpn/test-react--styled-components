@@ -11,7 +11,7 @@ function App() {
       <br />
       <br />
       <div style={{ marginTop: 30 }}>
-        <Button.Featured>Featured</Button.Featured>
+        <Button.Featured as="a">Featured</Button.Featured>
       </div>
     </div>
   );
